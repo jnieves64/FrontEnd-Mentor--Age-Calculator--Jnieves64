@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-container {
+    padding: 60px 55px 70px;
+    width: 58%;
+    min-width: 840px;
+    min-height: 68vh;
+    background-color: #ffffff;
+    border-radius: 30px 30px 190px 30px;
+}
+
+form .form-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+    border-bottom: 1px solid #ececec;
+}
+
+.form-container .form-input {
+    width: 100%;
+    max-width: 160px;
+}
+
+.form-input label {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    color: #6c6c6c;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.form-input label input {
+    padding-left: 25px;
+    margin-top: 8px;
+    height: 70px;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+.form-input label input:focus {
+    border: 1px solid #864cff;
+    outline: none;
+    caret-color: #864cff;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-input label span {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0;
+    color: #f30505;
+}
+
+form .form-button {
+    position: relative;
+}
+
+.main-container form button[type="submit"] {
+    position: absolute;
+    top: calc(100% - 47.5px);
+    right: 0;
+    width: 95px;
+    height: 95px;
+    border: none;
+    border-radius: 50%;
+    background-color: #864cff;
+}
+
+.main-container form button[type="submit"]:active {
+    background-color: #151515;
+}
+
+form button span {
+    display: inline-block;
+    width: 50%;
+    content: url(./assets/images/icon-arrow.svg);
+}
+
+.main-container .text-container {
+    margin-top: 60px;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 110px;
+    font-style: italic;
+    color: #151515;
+}
+
+.text-container span {
+    letter-spacing: 15px;
+    color: #864cff;
+}

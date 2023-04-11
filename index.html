@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="main-container">
+      <form id="form-age">
+        <div class="form-container">
+          <div class="form-input">
+            <label for="day" id="day-label"> DAY
+              <input type="number" id="day" placeholder="DD" required>
+              <span id="error-day"></span>
+            </label>
+          </div>
+          <div class="form-input">
+            <label for="month"> MONTH
+              <input type="number" id="month" placeholder="MM" required>
+              <span id="error-month"></span>
+            </label>
+          </div>
+          <div class="form-input">
+            <label for="year"> YEAR
+              <input type="number" id="year" placeholder="YYYY" required>
+              <span id="error-year"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-button">
+          <button type="submit" id="send"><span></span></button>
+        </div>
+      </form>
+      <div class="text-container">
+        <p><span id="year-result">--</span>years</p>
+        <p><span id="month-result">--</span>months</p>
+        <p><span id="day-result">--</span>days</p>
+      </div>
+    </div>
+
+
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
